@@ -1,0 +1,177 @@
+.checkbox input[type="checkbox"] {
+	position: relative;
+	margin-left: 0;
+	margin-right: .25em;
+
+	&:before {
+		width: 15px;
+		height: 15px;
+		border: 2px solid $brand-color;
+		content: ' ';
+		display: inline-block;
+		background-color: $white;
+		transition: all .3s ease;
+		cursor: pointer;
+		position: relative;
+		top: -1px;
+	}
+
+	&:checked {
+
+		&:before {
+			background-color: $brand-color;
+		}
+
+	}
+
+}
+
+.input-group {
+	width: 100%;
+	margin-bottom: 1em;
+
+	input {
+		box-shadow: none;
+	}
+}
+
+.form-control {
+	width: 100%;
+	background-color: $white;
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid $brand-color;
+	transition: all .3s ease;
+	padding: .75em 0;
+	height: 3em;
+
+	&:focus {
+		padding: .75em;
+		border-bottom: 2px solid $dark-blue;
+	}
+}
+
+.btn-default {
+	color: $white;
+	background-color: $brand-color;
+	transition: all .3s ease;
+	margin: 1em;
+	border-color: $brand-color;
+
+	&:hover {
+		color: $white;
+		background-color: $brand-color;
+		border-color: $brand-color;
+		box-shadow: 0px 3px 2px rgba( black, 1);
+	}
+
+	&:focus {
+		background-color: $white;
+		color: $brand-color;
+	}
+
+}
+
+.btn-secondary {
+	@extend .btn-default;
+	opacity: .6;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.btn-arrow {
+	border-radius: 0;
+	position: relative;
+	display: inline-block;
+	margin: 1em 0;
+	padding: .325em 2em .325em .75em;
+
+	&:after {
+		content: ' ';
+		position: absolute;
+		top: .5em;
+		right: .5em;
+		display: block;
+		width: 0; 
+		height: 0; 
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+		border-left: 8px solid $dark-blue;
+	}
+
+	&:hover {
+		box-shadow: 0px 5px 7px rgba(black, .2);
+	}
+}
+
+.form-control-feedback {
+	line-height: 40px;
+	height: 40px;
+}
+
+.has-warning, .has-error {
+	.form-control {
+		color: red;
+		background-color: rgb(255,235,235);
+		border-color: red;
+		padding: .75em;
+		box-shadow: none;
+		&:focus {
+			border-color: $dark-blue;
+		}
+	}
+	.form-control-feedback {
+		color: red;
+	}
+	.control-label {
+		color: red;
+	}
+}
+
+.has-success {
+	color: inherit;
+	.form-control {
+		box-shadow: none;
+		border-color: $brand-color;
+
+		&:focus {
+			border-color: $dark-blue;
+		}
+	}
+	.form-control-feedback {
+		color: $brand-color;
+		border: 2px solid;
+		width: 32px;
+		height: 32px;
+		line-height: 30px;
+		border-radius: 50%;
+		top: 2px;
+	}
+	.control-label {
+		color: $brand-color;
+	}
+}
+
+form {
+
+	.profile-image {
+		border: 2px dashed $brand-color;
+		border-radius: .5em;
+		padding: 1em;
+		display: inline-block;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+	}
+
+}
+
+label {
+	font-weight: $base-font-weight;
+	font-size: 1.325rem;
+	color: $brand-color;
+}

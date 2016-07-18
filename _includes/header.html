@@ -1,17 +1,34 @@
 <header class="site-header">
 
-  <div class="wrapper">
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="{{ site.baseurl }}/" href=""><img src="assets/qre-logo.svg"></a>
+    </div>
 
-    <nav class="site-nav">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-    </nav>
-
-  </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/search.html">Search</a></li>
+        <li><a href="/alerts.html">My Alerts</a></li>
+        <li><a href="/profile.html">My Profile</a></li>
+        <li><a href="javascript.void(0)" data-toggle="modal" data-target="#signIn">Sign In</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- nav container -->
+</nav>
 
 </header>
+
+<div class="user-welcome">
+  <div class="container">
+    <p><span class="greeting">Welcome,</span> Jane Fonda</p>
+  </div>
+</div>

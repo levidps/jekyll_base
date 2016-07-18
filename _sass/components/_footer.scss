@@ -1,0 +1,21 @@
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1.325em 0 0;
+	height: 60px;
+	background-image: url('../assets/border-pattern.png');
+	background-repeat: repeat-x;
+	background-size: 60px;
+
+	.col-md-6 {
+		font-size: 1.325rem;
+
+		&:last-child {
+			text-align: right;
+		}
+
+	}
+
+}

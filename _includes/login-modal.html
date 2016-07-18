@@ -1,0 +1,45 @@
+
+<div class="modal fade in" id="signIn">
+
+	<div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+<div class="modal-header">
+	<h2>Quick,<br/>log me in!</h2>
+</div>
+<div class="modal-body">
+	<form>
+
+		<!-- Email -->
+		<div class="input-group">
+		  <input type="text" class="form-control" name="email" placeholder="My Email" aria-describedby="">
+		</div>
+
+		<!-- Password -->
+		<div class="input-group has-warning has-feedback">
+		  <input type="text" class="form-control" name="password" placeholder="Password" aria-describedby="inputWarning2Status">
+		  <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+		  <span id="inputWarning2Status" class="sr-only">(warning)</span>
+		</div>
+
+		<!-- T/C -->
+		<div class="checkbox">
+			  <input type="checkbox"> Remember me</a>
+		</div>
+
+		<button type="button" class="btn btn-secondary btn-arrow" data-dismiss="modal">Cancel</button>
+		<button type="submit" class="btn btn-default btn-arrow">Sign Me In</button>
+	</form>
+</div>
+
+<div class="modal-footer">
+		<hr/>
+
+		<a href="javascript:void(0)">I forgot my password</a>
+		<a href="#" id="register" data-toggle="modal" data-target="#signUp">Sign me up.</a>
+
+</div>
+	
+		</div>
+	</div>
+</div>
