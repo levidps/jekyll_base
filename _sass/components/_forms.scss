@@ -70,6 +70,13 @@
 		color: $brand-color;
 	}
 
+	&.btn-outline {
+		background-color: inherit;
+		color: inherit;
+		border: 2px solid;
+		box-shadow: none;
+	}
+
 }
 
 .btn-secondary {
@@ -174,4 +181,108 @@ label {
 	font-weight: $base-font-weight;
 	font-size: 1.325rem;
 	color: $brand-color;
+	display: block;
+	margin: 1em 0 .25em;
+}
+
+.select2 {
+	display: block;
+	border: none;
+	border-bottom: 2px solid $brand-color;
+
+	span.select2-selection {
+		border: none !important;
+
+		&:after {
+			display: block;
+			font-family: 'Glyphicons Halflings';
+			content: '\e259';
+			position: absolute;
+			right: .5em;
+			top: .5em;
+			color: $brand-color;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+		}
+
+	}
+
+	.select2-selection--multiple {
+		
+		.select2-selection__choice__remove {
+			margin-right: .25em;
+			color: $brand-color;
+		}
+
+		.select2-selection__choice {
+			border: 2px solid $brand-color;
+			background-color: $white;
+			padding: .25em .5em;
+			color: $brand-color;
+		}
+
+	}
+
+}
+
+.select2-dropdown {
+	border: 2px solid $brand-color;
+	box-shadow: 0px 2px 7px rgba( $grey, 1 );
+
+	.select2-results__option {
+		transition: all .1s ease;
+
+		&[aria-selected=true] {
+			background-color: rgba($brand-color, .7);
+			color: $white;
+		}
+
+	}
+
+	.select2-results__option--highlighted {
+		color: $brand-color !important;
+		background-color: rgba( $brand-color, .2) !important;
+	}
+}
+
+.range-label {
+	margin: .325em 1.5em .75em 0;
+	display: inline-block;
+
+	&:last-child {
+		margin-right: 0;
+		margin-left: 1.5em;
+	}
+}
+
+.slider.slider-horizontal {
+
+ 	.slider-selection {
+ 		background: $dark-blue;
+ 	}
+
+ 	.slider-handle.triangle {
+ 	 	border-width: 0px 12px 12px 12px;
+ 	 	border-bottom-color: $brand-color;
+ 	 	top: 4px;
+ 	 	transform: rotate(90deg);
+ 	 	&:after {
+		    display: inline-block;
+		    background-color: #57c8e8;
+		    height: 12px;
+		    width: 24px;
+		    content: ' ';
+		    position: relative;
+		    top: 6px;
+		    left: -12px;
+ 	 	}
+ 
+ 	 	&:last-child {
+ 	 		top:-8px;
+ 	 		transform: rotate(-90deg);
+ 	 	}
+ 	}
 }

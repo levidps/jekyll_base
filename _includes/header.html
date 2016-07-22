@@ -11,7 +11,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="{{ site.baseurl }}/" href=""><img src="assets/qre-logo.svg"></a>
+      <a class="{{ site.baseurl }}/" href="index.html"><img src="assets/qre-logo.svg"></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -19,7 +19,7 @@
         <li><a href="{{ site.baseurl }}search.html">Search</a></li>
         <li><a href="{{ site.baseurl }}alerts.html">My Alerts</a></li>
         <li><a href="{{ site.baseurl }}profile.html">My Profile</a></li>
-        <li><a href="javascript.void(0)" data-toggle="modal" data-target="#signIn">Sign In</a></li>
+        <li><a href="login.html">Sign In</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- nav container -->
@@ -27,8 +27,12 @@
 
 </header>
 
-<div class="user-welcome">
-  <div class="container">
-    <p><span class="greeting">Welcome,</span> Jane Fonda</p>
+{% if page.status == 'logged-in' %}
+  <div class="user-welcome">
+    <div class="container">
+      <p><span class="greeting">Welcome,</span> Jane Fonda</p>
+    </div>
   </div>
-</div>
+{% else %}
+
+{% endif %}

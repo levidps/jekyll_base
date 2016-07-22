@@ -1,11 +1,32 @@
 ---
 layout: default
+status: logged-in
+id: no-alerts
 ---
 
 <div class="container">
+{% include add-alert.html %}
+{% include edit-alert.html %}
 
-{% include sign-up-modal.html %}
+	<!-- PAGE HEADER -->
+	<div class="page-header col-lg-12">
+		<div class="page-title col-lg-6">
+			<h1>Manage Alerts</h1>
+			<h5>Oh no! 0 alerts waiting for you.</h5>
+		</div>
 
-{% include login-modal.html %}
+		<div class="add-content col-lg-6">
+			<span>
+				<h4>Add new alert!</h4>
+				<button class="btn-default btn-outline" data-toggle="modal" data-target="#addAlert"> + </button>
+			</span>
+		</div>
+	</div>
+	<!-- END PAGE HEADER -->
+
+	<div class="alerts-table no-alerts col-lg-12">
+		<h2 class="col-lg-6">You have no alerts setup, set up your first alert now!</h2>
+	</div>
+
 
 </div>

@@ -1,0 +1,83 @@
+<script type="text/javascript">
+	$(".location-type").select2();
+	$(".purchase-type").select2();
+
+	// Without JQuery
+	var slider = new Slider('#ex2', {
+		handle: 'triangle',
+	});
+
+</script>
+
+<div class="col-lg-6">
+	<!-- Location -->
+	<div class="input-group">
+		<label>Location</label>
+		<input type="text" class="form-control" name="location" value="Traralgon" aria-describedby="">
+	</div>
+
+	<!-- Search Radius -->
+	<div class="input-group">
+		<label>Search Radius (km)</label>
+		<input type="number" class="form-control" name="search_radius" value="25" aria-describedby="">
+	</div>
+
+	<!-- Location Type -->
+	<div class="input-group">
+		<label class="control-label">Location Type</label>
+		<select class="location-type" multiple="multiple">
+		  <option value="buy">House</option>
+		  <option value="buy">Industrial</option>
+		  <option value="lease">Commercial</option>
+		</select>
+	</div>
+
+	<!-- Buy / Rent -->
+	<div class="input-group">
+		<label class="control-label">Purchase Type</label>
+		<select class="purchase-type" multiple="multiple">
+		  <option value="buy">Buy</option>
+		  <option value="buy">Rent</option>
+		  <option value="lease">Lease</option>
+		</select>
+	</div>
+
+</div>
+
+<div class="col-lg-6">
+
+	<!-- Price Range -->
+	<div class="input-group">
+		<label>Price Range</label>
+		<span class="range-label">$0</span> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <span class="range-label"> $700,000</span>
+	</div>
+
+	<!-- Last Name -->
+	<div class="input-group">
+		<label>Search Radius (km)</label>
+		<input type="number" class="form-control" name="last_name" value="VIC" aria-describedby="">
+	</div>
+
+	<!-- Email -->
+	<div class="input-group">
+		<label class="control-label">Post Code</label>
+		<input type="text" class="form-control" name="email" value="3844" aria-describedby="">
+	</div>
+
+	<!-- T/C -->
+	<div class="checkbox">
+		  <input type="checkbox"> Contact me via email</a>
+	</div>
+			<!-- T/C -->
+	<div class="checkbox">
+		  <input type="checkbox"> Contact me via mobile (sms)</a>
+	</div>
+			<!-- T/C -->
+	<div class="checkbox">
+		  <input type="checkbox"> Subscribe to newsletter</a>
+	</div>
+
+	<button type="submit" class="btn btn-default btn-secondary btn-arrow">Cancel</button>
+	<button type="submit" class="btn btn-default btn-arrow">Save Alert</button>
+
+</div>
