@@ -1,6 +1,10 @@
 <script type="text/javascript">
 	$(".location-type").select2();
 	$(".purchase-type").select2();
+	$(".bath_min").select2();
+	$(".bath_max").select2();
+	$(".bed_min").select2();
+	$(".bed_max").select2();
 
 	// Without JQuery
 	var slider = new Slider('#ex2', {
@@ -48,33 +52,62 @@
 
 	<!-- Price Range -->
 	<div class="input-group">
-		<label>Price Range</label>
-		<span class="range-label">$0</span> <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/> <span class="range-label"> $700,000</span>
+		<label class="control-label">Price Range</label>
+		<span class="range-label">$0</span> <input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="700000" data-slider-step="5" data-slider-value="[0,700000]"/> <span class="range-label"> $700,000</span>
 	</div>
+
+<div class="form-inline input-group">
+	<!-- Baths Min -->
+	<div class="form-group">
+		<label class="control-label">Baths Min</label>
+		<select class="bath_min">
+		  <option value="0">--</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		</select>
+	</div>
+
+	<!-- Baths Max -->
+	<div class="form-group">
+		<label class="control-label">Baths Max</label>
+		<select class="bath_max">
+		  <option value="0">--</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		</select>
+	</div>
+</div>
+
+<div class="form-inline input-group">
+	<!-- Beds Min -->
+	<div class="form-group">
+		<label class="control-label">Beds Min</label>
+		<select class="bath_min">
+		  <option value="0">--</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		</select>
+	</div>
+
+	<!-- Beds Max -->
+	<div class="form-group">
+		<label class="control-label">Beds Max</label>
+		<select class="bath_max">
+		  <option value="0">--</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		</select>
+	</div>
+</div>
 
 	<!-- Last Name -->
-	<div class="input-group">
-		<label>Search Radius (km)</label>
-		<input type="number" class="form-control" name="last_name" value="VIC" aria-describedby="">
-	</div>
-
-	<!-- Email -->
-	<div class="input-group">
-		<label class="control-label">Post Code</label>
-		<input type="text" class="form-control" name="email" value="3844" aria-describedby="">
-	</div>
-
-	<!-- T/C -->
-	<div class="checkbox">
-		  <input type="checkbox"> Contact me via email</a>
-	</div>
-			<!-- T/C -->
-	<div class="checkbox">
-		  <input type="checkbox"> Contact me via mobile (sms)</a>
-	</div>
-			<!-- T/C -->
-	<div class="checkbox">
-		  <input type="checkbox"> Subscribe to newsletter</a>
+	<div class="input-group clearfix">
+		<label class="control-label">Alert Expires</label>
+		<input type="date" class="form-control" name="last_name" value="VIC" aria-describedby="">
 	</div>
 
 	<button type="submit" class="btn btn-default btn-secondary btn-arrow">Cancel</button>
