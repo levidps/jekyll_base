@@ -1,69 +1,13 @@
-.checkbox input[type="checkbox"] {
-	position: relative;
-	margin-left: 0;
-	margin-right: .25em;
-
-	&:before {
-		width: 15px;
-		height: 15px;
-		border: 2px solid $brand-color;
-		content: ' ';
-		display: inline-block;
-		background-color: $white;
-		transition: all .3s ease;
-		cursor: pointer;
-		position: relative;
-		top: -1px;
-	}
-
-	&:checked {
-
-		&:before {
-			background-color: $brand-color;
-		}
-
-	}
-
-}
-
-.input-group {
-	width: 100%;
-	margin-bottom: 1em;
-
-	input {
-		box-shadow: none;
-	}
-
-	&.form-inline {
-		.form-group {
-			margin-right: 2em;
-			max-width: 75px;
-		}
-	}
-}
-
-.form-control {
-	width: 100%;
-	background-color: $white;
-	border: none;
-	border-radius: 0;
-	border-bottom: 2px solid $brand-color;
-	transition: all .3s ease;
-	padding: .75em 0;
-	height: 3em;
-
-	&:focus {
-		padding: .75em;
-		border-bottom: 2px solid $dark-blue;
-	}
-}
-
+/*					    *\
+    FORM BASE STYLING
+\*						*/
 .btn-default {
 	color: $white;
 	background-color: $brand-color;
 	transition: all .3s ease;
 	margin: 1em;
 	border-color: $brand-color;
+	transition: all .3s ease;
 
 	&:hover {
 		color: $white;
@@ -82,6 +26,17 @@
 		color: inherit;
 		border: 2px solid;
 		box-shadow: none;
+		border-radius: 5px;
+
+		&.delete, &.edit {
+			color: $brand-color;
+			margin: 1em 2%;
+		}
+
+		&:hover {
+			opacity: .6;
+		}
+
 	}
 
 }
@@ -120,6 +75,124 @@
 	}
 }
 
+.checkbox input[type="checkbox"] {
+	position: relative;
+	margin-left: 0;
+	margin-right: .25em;
+
+	&:before {
+		width: 15px;
+		height: 15px;
+		border: 2px solid $brand-color;
+		content: ' ';
+		display: inline-block;
+		background-color: $white;
+		transition: all .3s ease;
+		cursor: pointer;
+		position: relative;
+		top: -1px;
+	}
+
+	&:checked {
+
+		&:before {
+			background-color: $brand-color;
+		}
+
+	}
+
+}
+
+.input-group {
+	width: 100%;
+	margin-bottom: 1em;
+
+	input {
+		box-shadow: none;
+	}
+
+	&.range-slider {
+		margin-bottom: .625em;
+	}
+
+	&.form-inline {
+		margin-bottom: .5em;
+
+		.form-group {
+			margin-right: 2em;
+			max-width: 75px;
+
+			.select2 {
+				padding: .5em 0;
+			}
+		}
+	}
+}
+
+.form-control {
+	width: 100%;
+	background-color: $white;
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid $brand-color;
+	transition: all .3s ease;
+	padding: .75em 0;
+	height: 3em;
+
+	&:focus {
+		padding: .75em;
+		border-bottom: 2px solid $dark-blue;
+	}
+}
+
+form {
+
+	.profile-image {
+		border: 2px dashed $brand-color;
+		border-radius: .5em;
+		padding: 1em;
+		display: inline-block;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+	}
+
+}
+
+label {
+	font-weight: $base-font-weight;
+	font-size: 1.325rem;
+	color: $brand-color;
+	display: block;
+	margin: 1em 0 .25em;
+
+	&.slider-label {
+		margin-bottom: .825em;
+	}
+
+}
+
+.form-footer {
+	padding: .5em 0 0;
+	margin-top: 1em;
+	border-top: 1px solid rgba( $white, .4 );
+
+	a {
+		font-size: 1.125rem;
+
+		&:nth-child(even) {
+			float: right;
+		}
+
+	}
+
+}
+
+/*					    *\
+   FORM RESPONSE STATES
+\*						*/
 .form-control-feedback {
 	line-height: 40px;
 	height: 40px;
@@ -161,42 +234,25 @@
 		height: 32px;
 		line-height: 30px;
 		border-radius: 50%;
-		top: 2px;
+		top: 35px !important;
 	}
 	.control-label {
 		color: $brand-color;
 	}
 }
 
-form {
-
-	.profile-image {
-		border: 2px dashed $brand-color;
-		border-radius: .5em;
-		padding: 1em;
-		display: inline-block;
-
-		&:hover {
-			cursor: pointer;
-		}
-
-	}
-
-}
-
-label {
-	font-weight: $base-font-weight;
-	font-size: 1.325rem;
-	color: $brand-color;
-	display: block;
-	margin: 1em 0 .25em;
-}
-
-/* SELECT2 STYLING */
+/*					    *\
+     SELECT2 STYLING
+\*						*/
 .select2 {
 	display: block;
 	border: none;
 	border-bottom: 2px solid $brand-color;
+
+	.select2-selection__rendered {
+		font-size: 1.325rem !important;
+		line-height: 1.5em !important;
+	}
 
 	span.select2-selection {
 		border: none !important;
@@ -226,9 +282,9 @@ label {
 		}
 
 		.select2-selection__choice {
-			border: 2px solid $brand-color;
+			border: none;
 			background-color: $white;
-			padding: .25em .5em;
+			padding: 0 .5em 0 0;
 			color: $brand-color;
 		}
 
@@ -240,31 +296,39 @@ label {
 	display: none;
 }
 
-.select2-dropdown {
-	border: 2px solid $brand-color;
-	box-shadow: 0px 2px 7px rgba( $grey, 1 );
+.select2-container--default {
 
-	.select2-results__option {
-		transition: all .1s ease;
+	.select2-dropdown {
+		border: 2px solid $brand-color;
+		box-shadow: 0px 2px 7px rgba( $grey, 1 );
 
-		&[aria-selected=true] {
-			background-color: rgba($brand-color, .7);
-			color: $white;
+		.select2-results__option {
+			transition: all .1s ease;
+			font-size: 1.325rem;
+
+			&[aria-selected=true] {
+				background-color: rgba($brand-color, .7);
+				color: $white;
+			}
+
 		}
 
+		.select2-results__option--highlighted[aria-selected] {
+			color: $brand-color;
+			background-color: rgba( $brand-color, .2);
+		}
 	}
 
-	.select2-results__option--highlighted {
-		color: $brand-color !important;
-		background-color: rgba( $brand-color, .2) !important;
-	}
 }
 
-
-/* FORM SLIDER STYLING */
+/*					    *\
+    FORM SLIDER STYLING
+\*						*/
 .range-label {
-	margin: .325em 1.5em .75em 0;
+	margin: .325em 1.5em 1.325em 0;
 	display: inline-block;
+	font-size: 1.325rem;
+	color: black;
 
 	&:last-child {
 		margin-right: 0;
@@ -274,7 +338,7 @@ label {
 
 .slider {
 	.tooltip-inner {
-		background-color: rgba($brand-color, .7);		
+		background-color: rgba($dark-blue, .7);		
 	}
 	&.slider-horizontal {
 
@@ -308,8 +372,9 @@ label {
 }
 
 .tooltip.top {
+
 	.tooltip-arrow {
-		border-top-color: rgba($brand-color, .7);
+		border-top-color: rgba($dark-blue, .7);
 	}
 
 }
