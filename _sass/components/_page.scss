@@ -1,6 +1,16 @@
 .page-content {
 	padding: 2em 0 6em;
 	
+	.home & {
+		padding: 0 0 6em;
+
+		.container {
+			padding: 4em 0;
+			width: 100%;
+		}
+
+	}
+
 	.container {
 		padding: 0;
 	}
@@ -48,4 +58,100 @@
 	h4 {
 		display: inline-block;
 	}
+}
+
+.blue {
+	background-color: $brand-color;
+
+	h1 {
+		color: $white;
+		line-height: 1.5em;
+		font-size: 2.625rem;
+		letter-spacing: .01em;
+	}
+
+	.btn-default {
+		background-color: $white;
+		color: $brand-color;
+	}
+
+}
+
+.home-banner {
+	background-size: cover;
+	background-position-y: 35%; 
+	min-height: 65vh;
+	display: -webkit-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;   
+	align-items: center;
+
+	.wrapper {
+		display: table;
+
+		.panel {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0;
+
+			.panel-heading {
+				background-color: $white;
+				border-bottom: 1px solid $brand-color;
+
+				h4 {
+					margin-bottom: 0;
+				}
+
+			}
+
+			.panel-body {
+
+				h1 {
+					font-size: 2.125rem;
+					margin-bottom: 0;
+				}
+
+			}
+
+			.panel-footer {
+				background-color: $white;
+				border-top: none;
+			}
+
+		}
+
+		.search {
+			border-top: 1px solid $white;
+			padding: 1em 0;
+
+			a {
+				p {
+					opacity: .6;
+					transition: all .3s ease;
+
+					&:hover {
+						opacity: .8;
+					}
+				}
+			}
+
+			p {
+				color: $white;
+			}
+
+			.form-control {
+				width: 70%;
+				margin-right: 4%;
+				padding: 1em;
+			}
+
+		}
+
+	}
+
+	.btn-arrow {
+		margin: 0;
+	}
+
 }

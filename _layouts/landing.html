@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{{ page.id }}">
+
+    {% include header-two.html %}
+
+    <div class="page-content">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+	<!-- Base Scripts -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+
+</html>
