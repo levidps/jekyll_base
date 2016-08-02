@@ -4,6 +4,11 @@
 	.home & {
 		padding: 0 0 6em;
 
+		h2 {
+			color: $brand-color;
+			font-size: 2.125rem;
+		}
+
 		.container {
 			padding: 4em 0;
 			width: 100%;
@@ -60,8 +65,17 @@
 	}
 }
 
+.col-image {
+	max-width: 75px;
+	margin-bottom: 1em;
+}
+
 .blue {
 	background-color: $brand-color;
+	background-image: url('/assets/bg-pattern-white.png');
+	background-position-y:24px;
+	position: relative;
+	overflow: hidden;
 
 	h1 {
 		color: $white;
@@ -73,6 +87,25 @@
 	.btn-default {
 		background-color: $white;
 		color: $brand-color;
+	}
+
+	&:after {
+		position: absolute;
+		content: ' ';
+		transform: rotate(-25deg);
+		background-color: $brand-color;
+		display: block;
+		width: 50%;
+	    height: 200%;
+	    z-index: 1;
+	    top: -55%;
+	    display: block;
+	    right: -10%;
+	}
+
+	.wrapper {
+		position: relative;
+		z-index: 5;
 	}
 
 }
@@ -88,10 +121,9 @@
 	align-items: center;
 
 	.wrapper {
-		display: table;
+		width: 100%;
 
 		.panel {
-			display: table-cell;
 			vertical-align: middle;
 			padding: 0;
 
@@ -112,6 +144,11 @@
 					margin-bottom: 0;
 				}
 
+				img {
+					max-width: 125px;
+					margin-bottom: .5em;
+				}
+
 			}
 
 			.panel-footer {
@@ -124,6 +161,7 @@
 		.search {
 			border-top: 1px solid $white;
 			padding: 1em 0;
+			clear: both;
 
 			a {
 				p {

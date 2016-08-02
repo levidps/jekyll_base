@@ -10,6 +10,11 @@
 	transition: all .3s ease;
 	text-align: center;
 
+	&:visited {
+		background-color: $brand-color;
+		color: $white;
+	}
+
 	&:hover {
 		color: $white;
 		background-color: $brand-color;
@@ -58,6 +63,7 @@
 	display: inline-block;
 	margin: 1em 0;
 	padding: .325em 1em;
+	text-decoration: none;
 
 /* Hidden arrow in button container
 	&:after {
@@ -76,6 +82,7 @@
 
 	&:hover {
 		box-shadow: 0px 5px 7px rgba(black, .2);
+		text-decoration: none;
 	}
 }
 
