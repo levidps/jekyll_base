@@ -12,3 +12,15 @@ $(".bed_max").select2();
 new Slider('#addAlert .slider-input', { handle: 'triangle', });
 new Slider('#editAlert .slider-input', { handle: 'triangle', });
 
+
+
+// How it works animations
+$(window).load(function() {
+
+	// section one animations
+	$('#sectionOneArrow polyline').delay(400).css({
+	    'stroke-dasharray': '200,0',
+	    'stroke-dashoffset': '58'
+
+	});
+});
