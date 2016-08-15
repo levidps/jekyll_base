@@ -212,6 +212,12 @@ label {
 		opacity: .7;
 	}
 
+	input {
+		padding: .5em;
+		border: none;
+		border-radius: 5px;
+	}
+
 	&.search-bar {
 		padding: 2em 0;
 		margin-top: 2em;

@@ -1,0 +1,84 @@
+/* 					*\
+	   LISTINGS
+\*					*/
+.listings {
+	border-bottom: 2px solid $brand-color;
+	margin: 4em auto;
+
+	&-heading {
+		border-bottom: 2px solid $brand-color;
+		display: table;
+		padding: 0 1em;
+
+		p {
+			font-weight: bold;
+			color: $brand-color;
+			display: table-cell;
+
+		}
+
+		.icon {
+			font-size: 2em;
+			width: 50px;
+
+			&.cars {
+				font-size: 1.825em;
+			}
+
+		}
+
+	}
+
+	&-property {
+		display: table;
+		padding: 0 1em;
+
+		p {
+			display: table-cell;
+		}
+
+		&:nth-child(odd) {
+			background-color: rgba($brand-color, .1);
+		}
+
+		.beds, .baths, .cars {
+			width: 50px;
+			padding-left: .325em;
+			text-align: center;
+
+			&:before {
+				display: none;
+			}
+		}
+
+	}
+
+	.listing {
+		
+		&-time {
+			width: 10%;
+		}
+
+		&-town {
+			width: 15%;
+		}
+
+		&-address {
+			width: 25%;
+		}
+
+		&-type {
+			width: 15%;
+		}
+
+		&-price {
+			padding-left: 1.25em;
+			width: 15%
+		}
+
+		&-inquire {
+			text-align: left;
+		}
+	}
+
+}
