@@ -1,0 +1,203 @@
+.page-content {
+	padding: 2em 0 6em;
+	
+	.home & {
+		padding: 0 0 6em;
+
+		h2 {
+			color: $brand-color;
+			font-size: 2.125rem;
+		}
+
+		.container {
+			padding: 4em 0;
+			width: 100%;
+		}
+
+	}
+
+	.container {
+		padding: 0;
+	}
+	
+}
+
+.page-header {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.page-title {
+	margin-bottom: $spacing-unit;
+	padding: 0;
+
+	h1 {
+		margin: 0 0 .25em;
+	}
+
+}
+
+.add-content {
+	text-align: right;
+	color: $brand-color;
+	padding: 0;
+
+	button {
+		display: inline-block;
+		font-size: 1.5em;
+		height: 1.5em;
+		width: 1.5em;
+		border-radius: 5px;
+		line-height: .75em;
+		margin: .5em;
+		margin-right: 0;
+
+		&:hover {
+			background-color: $brand-color;
+			color: $white;
+			border-color: $brand-color;
+		}
+
+	}
+
+	h4 {
+		display: inline-block;
+	}
+}
+
+.col-image {
+	max-width: 75px;
+	margin-bottom: 1em;
+}
+
+.blue {
+	background-color: $brand-color;
+	background-image: url('/assets/bg-pattern-white.png');
+	background-position-y:24px;
+	position: relative;
+	overflow: hidden;
+
+	h1 {
+		color: $white;
+		line-height: 1.5em;
+		font-size: 2.625rem;
+		letter-spacing: .01em;
+	}
+
+	.btn-default {
+		background-color: $white;
+		color: $brand-color;
+	}
+
+	&:after {
+		position: absolute;
+		content: ' ';
+		transform: rotate(-25deg);
+		background-color: $brand-color;
+		display: block;
+		width: 50%;
+	    height: 200%;
+	    z-index: 1;
+	    top: -100%;
+	    display: block;
+	    right: -10%;
+	}
+
+	.wrapper {
+		position: relative;
+		z-index: 5;
+	}
+
+}
+
+.home-banner {
+	background-size: cover;
+	background-position-y: 35%; 
+	min-height: 65vh;
+	display: -webkit-box; 
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;   
+	align-items: center;
+
+	.wrapper {
+		width: 100%;
+
+		.panel {
+			vertical-align: middle;
+			padding: 0;
+
+			.panel-heading {
+				background-color: $white;
+				border-bottom: 1px solid $brand-color;
+
+				h4 {
+					margin-bottom: 0;
+				}
+
+			}
+
+			.panel-body {
+
+				h1 {
+					font-size: 2.125rem;
+					margin-bottom: 0;
+				}
+
+				img {
+					max-width: 125px;
+					margin-bottom: .5em;
+				}
+
+			}
+
+			.panel-footer {
+				background-color: $white;
+				border-top: none;
+				padding: 0;
+
+				.btn-default {
+					width: 100%;
+					border-color: $brand-color;
+				}
+			}
+
+		}
+
+		.search {
+			border-top: 1px solid $white;
+			padding: 1em 0;
+			clear: both;
+
+			a {
+				p {
+					opacity: .6;
+					transition: all .3s ease;
+
+					&:hover {
+						opacity: .8;
+					}
+				}
+			}
+
+			p {
+				color: $white;
+			}
+
+			.form-control {
+				width: 70%;
+				margin-right: 4%;
+				padding: 1em;
+			}
+
+		}
+
+	}
+
+	.btn-arrow {
+		margin: 0;
+	}
+
+}
+
+@import 'how-it-works';

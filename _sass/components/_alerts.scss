@@ -1,0 +1,102 @@
+/*					    *\
+      NO ALERTS PAGE
+\*						*/
+body .no-alerts {
+
+	h2 {
+		font-size: 4rem;
+		color: $light-grey;
+	}
+
+	.col-lg-6 {
+
+		svg {
+			width: 100%;
+			height: auto;
+			margin-top: -3em;
+			opacity: .5;
+
+			#alert-line {
+				@include animation(stroke 2.0s linear);
+				@include animation-iteration-count(infinite);
+			}
+
+		}
+
+		&:last-child {
+			padding-right: .5em;
+		}
+
+	}
+
+}
+
+/*					    *\
+       ALERTS PAGE
+\*						*/
+.alert-individual {
+	border-bottom: 2px solid $brand-color;
+    padding: 1em 0;
+    margin: 0 1em 1em;
+
+	p {
+		color: lighten( $grey, 15);
+		margin-bottom: .25em;
+
+		span {
+			color: $grey;
+		}		
+
+	}
+
+	&--heading {
+
+
+		h3 {
+			display: inline-block;
+
+			span {
+				margin: 0 .25em;
+				border-right: 2px solid;
+				display: inline-block;
+				padding-right: .325em;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					border-right: none;
+				}
+
+			}
+
+		}
+
+		p {
+			display: inline-block;
+		}
+
+	}
+
+	.col-lg-3 {
+		&:last-child {
+			padding-right: 0;
+		}
+		&:nth-child(even) {
+			padding-left: 0;
+		}
+	}
+
+	.cars, .baths, .beds {
+		margin-top: .75em;
+	    padding: 0;
+	    text-align: center;
+
+		&:before {
+			color: $brand-color;
+			font-size: 3rem;
+		}
+	}
+
+}

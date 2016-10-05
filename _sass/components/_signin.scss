@@ -1,0 +1,83 @@
+.signin, .register {
+	background-color: darken($white, 5);
+
+	.user-welcome {
+		visibility: hidden;
+	}
+
+	.page-content .container {
+		background-color: $brand-color;
+		color: $white;
+		position: relative;
+		overflow: hidden;
+		border: none;
+		padding: 2em;
+		margin: 0 auto;
+		float: none;
+		box-shadow: 0 10px 15px rgba(black, .2);
+
+		a {
+			position: relative;
+			z-index: 1;
+		}
+
+		&:before {
+			height: 220%;
+			width: 75%;
+			content: ' ';
+			display: block;
+			position: absolute;
+			top: -10%;
+			left: -10%;
+			transform: rotate(-15deg);
+			background-color: rgba($white, .14);
+			z-index: 0;
+		}
+
+		.checkbox input[type="checkbox"] {
+
+			&:before {
+				border: 2px solid $white;
+				background-color: $brand-color;
+			}
+
+			&:checked {
+
+				&:before {
+					background-color: $white;
+				}
+
+			}
+
+		}
+
+		.form-control {
+			padding: .75em;
+		}
+
+		.btn-default {
+			color: $brand-color;
+			background-color: $white;
+			border-color: $brand-color;
+
+			&:hover {
+				color: $brand-color;
+				background-color: $white;
+				border-color: $brand-color;
+			}
+
+			&:focus {
+				background-color: $white;
+				color: $brand-color;
+			}
+
+		}
+
+		.btn-arrow {
+			&:after {
+				border-left: 8px solid $light-grey;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,48 @@
+---
+layout: default
+status: logged-in
+id: no-alerts
+---
+
+<div class="container">
+{% include add-alert.html %}
+
+	<!-- PAGE HEADER -->
+	<div class="page-header col-lg-12">
+		<div class="page-title col-lg-6">
+			<h1>Manage Alerts</h1>
+			<h5>Oh no! 0 alerts waiting for you.</h5>
+		</div>
+
+		<div class="add-content col-lg-6">
+			<span>
+				<h4>Add new alert!</h4>
+				<button class="btn-default btn-outline" data-toggle="modal" data-target="#addAlert"> + </button>
+			</span>
+		</div>
+	</div>
+	<!-- END PAGE HEADER -->
+
+	<div class="alerts-table no-alerts col-lg-12">
+		<h2 class="col-lg-6">You have no alerts setup, set up your first alert now!</h2>
+
+		<div class="col-lg-6">
+			<!-- NO ALERTS SVG ARROW IMAGE -->
+			<svg version="1.1" baseProfile="tiny"
+				 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+				 x="0px" y="0px" width="403.6px" height="81.2px" viewBox="0 0 403.6 81.2" xml:space="preserve">
+
+			<g id="XMLID_16_">
+				<g id="XMLID_26_">		
+						<path id="alert-line" fill="none" stroke="#8EDAF0" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="12.0516,12.0516" d="
+						M18,79.7c0,0,331.5,0,349.3,0c20.6,0,30.2-2.2,30.2-25.7c0-10.2,0-31.8,0-31.8"/>
+						<polygon id="XMLID_28_" fill="#8EDAF0" points="397.5,0 403.6,14.9 397.5,11.4 391.4,14.9 			"/>
+				</g>
+			</g>
+			</svg>
+		</div>
+
+	</div>
+
+
+</div>

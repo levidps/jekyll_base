@@ -1,0 +1,252 @@
+@media only screen and ( max-width: 1199px ) {
+	.container {
+		width: 95%;
+	}
+
+	.how-it-works section {
+
+		span {
+			min-height: 175px;
+		}
+
+		svg {
+			bottom: -80px;
+		    left: 33.25%;
+		}
+
+		&#sectionTwo {
+			svg {
+				left: 36.25%;
+			    bottom: -50px;
+			}
+
+		}
+
+		&#sectionThree {
+			svg {
+				bottom: 25px;
+			}
+		}
+
+		&#sectionFour {
+			svg {
+				left: 24%;
+			}
+		}
+
+	}
+
+}
+
+@media only screen and ( max-width: 1024px ) {
+	.container {
+		width: 95%;
+	}
+
+	.how-it-works {
+
+		section {
+
+			svg {
+				left: 32.25%;
+			}
+
+			&#sectionTwo {
+				svg {
+					left: 35.5%;
+					bottom: -35px;
+				}
+
+			}
+
+			&#sectionFour {
+				svg {
+					left: 22%;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+@media only screen and ( max-width: 992px ) {
+	
+	.container {
+		width: 95%;
+	}
+
+	.how-it-works {
+
+		section {
+
+			span {
+				min-height: auto;
+				text-align: center;
+
+				&:nth-child(even) {
+					background-color: transparent;
+
+					p {
+						text-align: center;
+					}
+				}
+
+			}
+
+			svg {
+				position: relative;
+				bottom: 0;
+				left: 0;
+				display: block;
+				margin: 0 auto;
+				max-width: 85%;
+			}
+
+			&#sectionTwo {
+				svg {
+				    left: 3%;
+				    bottom: 1em;
+				}
+			}
+
+			&#sectionFour {
+				svg {
+					left: 0;
+					margin-bottom: 2em;
+				}
+			}
+
+			&#sectionFive {
+				svg {
+					left: 25%;
+					float: left;
+					clear: both;
+					margin-bottom: 1em;
+				}
+
+			}
+
+		}
+
+	}
+
+	.blue {
+
+		&.search-bar {
+			padding: 2em 0;
+			margin-top: 2em;
+
+			.search {
+				z-index: 10;
+			}
+
+			.btn-default {
+				display: block;
+				margin-top: 1em;
+				margin-left: 0;
+			}
+
+			input {
+				float: none;
+				width: 100%;
+			}
+
+		}
+
+	}
+
+	.listings {
+		border: none;
+
+		&-heading {
+			display: none;
+		}
+
+		&-property {
+			display: block;
+
+			&:nth-child(odd) {
+				background-color: rgba($brand-color, 0);
+			}
+
+			p {
+				display: block;
+			}
+
+			.listing-time {
+				margin-top: 1em;
+				width: 100%;
+				border-bottom: 1px solid;
+			}
+
+			.listing-town {
+				width: 100%;
+				font-size: 2.125rem;
+				margin-bottom: .125em;
+			}
+
+			.listing-address {
+				width: 100%;
+			}
+
+			.listing-type {
+				width: 100%;
+			}
+
+			.beds {
+				padding-left: 0;
+			}
+
+			.beds, .baths, .cars {
+				width: 25%;
+				min-width: 75px;
+				padding-left: .325em;
+				text-align: left;
+				float: left;
+
+				&:before {
+					color: $brand-color;
+					margin-right: .25em;
+					font-size: 1.625em;
+					display: inline-block;
+				}
+			}
+
+			.listing-price {
+				font-size: 2.125rem;
+				padding-left: 0;
+			}
+
+			.listing-inquire {
+				text-align: center;
+
+				a {
+					width: 100%;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media only screen and ( max-width: 768px ) {
+
+	.home-banner .wrapper .search .form-control {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	footer .col-sm-6  {
+		text-align: center;
+
+		&:last-child {
+			text-align: center;
+		}
+	}
+
+}
