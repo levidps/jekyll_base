@@ -16,12 +16,8 @@ url: "http://theviewfromhere.com.au/_QRE/dev" # the base hostname & protocol for
 # Build settings
 markdown: kramdown
 
-<<<<<<< HEAD
 # Included Gems  
 Gems:
   - bourbon
   - jekyll-angular
-=======
-gems:
-  - bourbon
->>>>>>> b98ac7b66f1191518663371814dd6d28dafa4fc6
+
