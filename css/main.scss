@@ -3,14 +3,10 @@
 ---
 @charset "utf-8";
 
-<<<<<<< HEAD
-// Import Bourbon
-=======
->>>>>>> b98ac7b66f1191518663371814dd6d28dafa4fc6
-@import 'bourbon';
+
 
 // Our variables
-$base-font-family: "Avenir", Helvetica, Arial, sans-serif;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -18,18 +14,16 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       	#a6a8ab;
-$background-color: 	#fdfdfd;
-$brand-color:      	#57c8e8;
-$dark-blue:			#449ab2;
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
 
-$white:				#fefefe;
-$grey:       #a6a8ab;
-$light-grey: lighten($grey, 20);
-$dark-grey:  darken($grey, 25%);
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    960px;
+$content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -50,69 +44,10 @@ $on-laptop:        800px;
 }
 
 
-@font-face {
-  font-family: 'icomoon';
-  src:  url('/assets/fonts/icomoon.eot?fhe97z');
-  src:  url('/assets/fonts/icomoon.eot?fhe97z#iefix') format('embedded-opentype'),
-    url('/assets/fonts/icomoon.ttf?fhe97z') format('truetype'),
-    url('/assets/fonts/icomoon.woff?fhe97z') format('woff'),
-    url('/assets/fonts/icomoon.svg?fhe97z#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon"]:before, [class*=" icon"]:before, [class^="icon"]:after, [class*=" icon"]:after {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.edit:after {
-	font-family: 'icomoon' !important;
-	content: "\e900";
-	display: inline-block;
-	margin-left: .25em;
-	font-size: 1em;
-}
-.delete:after {
-	font-family: 'icomoon' !important;
-	content: "\e901";
-	display: inline-block;
-	margin-left: .25em;
-}
-
-.baths:before {
-  content: "\e902";
-  font-family: 'icomoon' !important;
-}
-.beds:before {
-  content: "\e903";
-  font-family: 'icomoon' !important;
-}
-.cars:before {
-  content: "\e904";
-  font-family: 'icomoon' !important;
-}
-
-@include keyframes(stroke) {
-  0% { stroke-dashoffset: 0 }
-  0% { stroke-dashoffset: 47 }
-}
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
-        "syntax-highlighting",
-        "mobile"
+        "syntax-highlighting"
 ;

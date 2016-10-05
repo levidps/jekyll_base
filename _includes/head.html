@@ -1,25 +1,5 @@
 <head>
 
-    <!--
-         ______   __  __     ______           __   __   __     ______     __     __                   
-        /\__  _\ /\ \_\ \   /\  ___\         /\ \ / /  /\ \   /\  ___\   /\ \  _ \ \                  
-        \/_/\ \/ \ \  __ \  \ \  __\         \ \ \'/   \ \ \  \ \  __\   \ \ \/ ".\ \                 
-           \ \_\  \ \_\ \_\  \ \_____\        \ \__|    \ \_\  \ \_____\  \ \__/".~\_\                
-            \/_/   \/_/\/_/   \/_____/         \/_/      \/_/   \/_____/   \/_/   \/_/                
-                                                                                                      
-         ______   ______     ______     __    __           __  __     ______     ______     ______    
-        /\  ___\ /\  == \   /\  __ \   /\ "-./  \         /\ \_\ \   /\  ___\   /\  == \   /\  ___\   
-        \ \  __\ \ \  __<   \ \ \/\ \  \ \ \-./\ \        \ \  __ \  \ \  __\   \ \  __<   \ \  __\   
-         \ \_\    \ \_\ \_\  \ \_____\  \ \_\ \ \_\        \ \_\ \_\  \ \_____\  \ \_\ \_\  \ \_____\ 
-          \/_/     \/_/ /_/   \/_____/   \/_/  \/_/         \/_/\/_/   \/_____/   \/_/ /_/   \/_____/
-
-         _____________________________________________________________________________________________
-
-         Design by - The View From Here - www.tvfh.com.au
-
-    -->
-
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,28 +7,9 @@
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-	<!-- JQUERY Base Library -->
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
-	<!-- BASE SCRIPTS -->
-	<script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}"></script>
-
-	<!-- Bootstrap Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.1.1/css/bootstrap-slider.min.css" crossorigin="anonymous">
-
-	<!-- Bootstrap Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.1.1/bootstrap-slider.min.js" crossorigin="anonymous"></script>	
-
-	<!-- Select2 CSS/JS Base files -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
-
-	<link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
 
 	<!-- OG TAGS -->
 	<meta property="og:title" content="{{ site.title }}">
@@ -58,6 +19,9 @@
 	<meta property="og:type" content="business.business">
 	<meta property="og:image" content="{{ "/assets/social-image.jpg" | prepend: site.baseurl }}">
 
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
 </head>

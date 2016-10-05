@@ -3,18 +3,17 @@
 
   {% include head.html %}
 
-  <body class="{{ page.id }}">
+  <body>
 
     {% include header.html %}
 
     <div class="page-content">
+      <div class="wrapper">
         {{ content }}
+      </div>
     </div>
 
     {% include footer.html %}
-
-	<!-- Base Scripts -->
-	<script type="text/javascript" src="js/main.js"></script>
 
   </body>
 

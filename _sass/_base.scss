@@ -23,14 +23,8 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    position: relative;
-    min-height: 100%;
 }
 
-html {
-    position: relative;
-    height: 100%;
-}
 
 
 /**
@@ -92,30 +86,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/**
- * Horizontal Rule 
- */
-hr {
-    margin: .5em 0;
-    border-color: rgba( lighten($brand-color, 15) , .7);
-}
-
 
 /**
  * Links
  */
 a {
-    color: inherit;
-    text-decoration: underline;
-    transition: all .3s ease;
+    color: $brand-color;
+    text-decoration: none;
 
     &:visited {
-        color: inherit;
+        color: darken($brand-color, 15%);
     }
 
-    &:hover, &:focus {
-        color: inherit;
-        opacity: .6;
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
     }
 }
 
@@ -125,8 +110,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey;
-    border-left: 4px solid $light-grey;
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -145,7 +130,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $light-grey;
+    border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -177,7 +162,6 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    float: none;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -216,7 +200,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey;
+            fill: $grey-color;
         }
     }
 }
@@ -229,11 +213,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
   &::selection {
     background: rgba(darken($brand-color, 10), .8); 
-    color: lighten($white, 20);
+    color: darken($text-color, 2);
   }
   &::-moz-selection {
     background:rgba(darken($brand-color, 10), .8); 
-    color: lighten($white, 20);
+    color: darken($text-color, 2);
   }
 }
 
@@ -246,5 +230,3 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   color: inherit;
   opacity: 1;
 }
-
-@import "components/typography";
