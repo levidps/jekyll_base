@@ -1,19 +1,28 @@
+# STARTER JEKYLL BUILD 
+# built using the base starter from Jekyll.com
+
+#  Features
+#    - OG / meta tags 
+#    - JSON-LD block
+#    - Manifest file
+#    - Analytics code
+
 # Site settings
 title: 
 email: 
-phone: 
-phone-link: 0
-description: > 
+phone:  #human readable output
+phone-link: #just numbers uses tel: for hyperlink
+description: > #add new lines after '>'
   
 baseurl: "/"
 url: ""
 twitter_username: 
 facebook_username: 
+google_anlytics: '_____________' #UA code for analytics 
 
 # Build settings
 markdown: kramdown
 
 # Angular Plugin
 gems:
-  - jekyll-angular
   - bourbon
