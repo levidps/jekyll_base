@@ -14,7 +14,7 @@ phone:  #human readable output
 phone-link: #just numbers uses tel: for hyperlink
 description: > #add new lines after '>'
   
-baseurl: "/"
+baseurl: ""
 url: ""
 twitter_username: 
 facebook_username: 
